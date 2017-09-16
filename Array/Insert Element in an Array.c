@@ -2,6 +2,7 @@
 #define MAX_SIZE 100
 
 int i,n,newelement,position;
+// Declare Array
 int data[MAX_SIZE];
 
 int main(){
@@ -25,7 +26,7 @@ int main(){
     insertelement(newelement,position);
     print();
 }
-
+// function to print data
 void print(){
     printf("Element in the Array : ");
     for(i=0;i<n;i++){
@@ -33,7 +34,7 @@ void print(){
     }
     printf("\n\n");
 }
-
+// Function to insert data in array 
 int insertelement(int element, int position){
     int N=n-1;
     while(position<=N)

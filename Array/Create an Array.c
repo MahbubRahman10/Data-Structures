@@ -2,6 +2,7 @@
 #define MAX_SIZE 100
 
 int i,n,newelement,position;
+// Declare an Array
 int data[MAX_SIZE];
 
 int main(){
@@ -18,6 +19,7 @@ int main(){
 
 }
 
+// Function to print data 
 void print(){
     printf("Element in the Array : ");
     for(i=0;i<n;i++){

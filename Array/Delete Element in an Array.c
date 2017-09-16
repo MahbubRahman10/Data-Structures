@@ -2,6 +2,7 @@
 #define MAX_SIZE 100
 
 int i,n,newelement,position;
+// Declare Array
 int data[MAX_SIZE];
 
 int main(){
@@ -14,7 +15,7 @@ int main(){
         scanf("%d",&data[i]);
     }
 
-    print();
+    print(); // call the print function
 
     printf("Enter the position the element to be deleted: ");
     scanf("%d",&position);
@@ -23,7 +24,7 @@ int main(){
     deleteelement(position);
     print();
 }
-
+// Function to print data
 void print(){
     printf("Element in the Array : ");
     for(i=0;i<n;i++){
@@ -31,7 +32,7 @@ void print(){
     }
     printf("\n");
 }
-
+// Function to delete data from array
 int deleteelement(int position){
     int N=position+1;
     while(N<=n-1)

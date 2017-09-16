@@ -7,19 +7,6 @@ struct linkedlist{
     struct linkedlist* link;
 };
 
-/* Declared a pointer to node */
-struct linkedlist* head;
-
-/* function to print data */
-void print(){
-    struct linkedlist* temp;
-    temp=head;
-    while(temp != NULL){
-        printf(" %d " , temp->data);
-        temp=temp->link;
-    }
-}
-
 int main(){
     head=NULL;
     insert(200);
@@ -31,6 +18,19 @@ int main(){
 
     insert(100);
     print();
+}
+
+/* Declared a pointer to node */
+struct linkedlist* head;
+
+/* function to print data */
+void print(){
+    struct linkedlist* temp;
+    temp=head;
+    while(temp != NULL){
+        printf(" %d " , temp->data);
+        temp=temp->link;
+    }
 }
 
 /* Function to inserting a node at beginning */

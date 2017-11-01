@@ -4,8 +4,10 @@
 /* Define a structure named linkedlist */
 struct linkedlist{
     int data;
-    struct linkedlist* link;
+    struct linkedlist* next;
 };
+
+struct linkedlist* head;
 
 int main(){
     head=NULL;
@@ -29,7 +31,7 @@ void print(){
     temp=head;
     while(temp != NULL){
         printf(" %d " , temp->data);
-        temp=temp->link;
+        temp=temp->next;
     }
 }
 
@@ -37,7 +39,7 @@ void print(){
 void insert(int value){
     struct linkedlist* temp = (struct linkedlist*)malloc(sizeof(struct linkedlist));
     temp->data = value;
-    temp->link=head;
+    temp->next=head;
     head=temp;
 }
 

@@ -32,7 +32,6 @@ BST* inserts(struct BST* root,int data){
    return root;
 }
 
-
 int PostDfs(BST* root){
     if(root == NULL){
         return false;
